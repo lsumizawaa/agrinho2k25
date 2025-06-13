@@ -12,8 +12,8 @@
     /* Colors */
     --white-color: #fff;
     --dark-color: #252525;
-    --primary-color: #3b141c;
-    --secondary-color: #f3961c;
+    --primary-color:#fcfaf8;
+    --secondary-color: #db632d;
     --light-pink-color: #faf4f5;
     --medium-gray-color: #ccc;
 
@@ -38,9 +38,6 @@
 
     /* Site max width */
     --site-max-width: 1300px;
-
-
-
  }
 
 /* Stylings for whole site */
@@ -70,7 +67,10 @@ img {
 
     /* Navbar styling */
  header {
-    background: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--secondary-color);
  }
 
  header .navbar {
@@ -100,6 +100,33 @@ img {
  }
 
  .navbar .nav-menu .nav-link:hover {
-    color: var(--primary-color);
-    background: var(--secondary-color);
+    color: var(--secondary-color);
+    background: var(--primary-color);
+ }
+
+ .hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+ }
+
+ .hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+    justify-content: space-between;
+ }
+
+ .hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+ }
+
+ .hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    
  }
